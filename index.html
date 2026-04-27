@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Baby Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="app-container">
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-icon-container">
+      <div class="hero-icon">✨</div>
+    </div>
+    <h1>Smart Baby Journey Assistant</h1>
+    <p>Personalized product guidance for every stage of your baby’s growth</p>
+  </header>
+
+  <!-- Input Section -->
+  <main class="input-section">
+    <div class="input-grid">
+      <div class="input-field">
+        <label for="age">Baby Age</label>
+        <div class="select-wrapper">
+          <select id="age">
+            <option value="0-3 months">0–3 months</option>
+            <option value="3-6 months">3–6 months</option>
+            <option value="6-12 months">6–12 months</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="category">Category</label>
+        <div class="select-wrapper">
+          <select id="category">
+            <option value="Feeding">Feeding</option>
+            <option value="Skincare">Skincare</option>
+            <option value="Toys">Toys</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="budget">Budget</label>
+        <div class="select-wrapper">
+          <select id="budget">
+            <option value="100">100 AED</option>
+            <option value="300">300 AED</option>
+            <option value="500">500 AED</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-field full-width">
+      <label for="need">Specific Needs (Optional)</label>
+      <input type="text" id="need" placeholder="Any specific need? (e.g. teething, sensitive skin)">
+    </div>
+
+    <button id="generate-btn" class="primary-btn" onclick="generate()">
+      <span class="btn-text">Generate Smart Recommendations</span>
+      <span class="btn-loader" style="display: none;">
+        <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
+        Generating...
+      </span>
+    </button>
+  </main>
+
+  <!-- Output Section -->
+  <section class="output-container" id="output">
+    <!-- Dynamic content will be injected here -->
+  </section>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
