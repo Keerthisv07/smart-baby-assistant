@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Baby Feeding Bottle",
+    "category": "Feeding",
+    "price": 100,
+    "age": "0-6 months",
+    "tags": ["general"]
+  },
+  {
+    "name": "Silicone Teether",
+    "category": "Feeding",
+    "price": 150,
+    "age": "3-12 months",
+    "tags": ["teething"]
+  },
+  {
+    "name": "Baby Lotion",
+    "category": "Skincare",
+    "price": 200,
+    "age": "0-12 months",
+    "tags": ["sensitive skin"]
+  },
+  {
+    "name": "Soft Toy Set",
+    "category": "Toys",
+    "price": 300,
+    "age": "6-12 months",
+    "tags": ["general"]
+  }
+]
